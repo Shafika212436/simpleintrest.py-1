@@ -8,8 +8,8 @@ def calculate_simple_interest(principal, rate, time):
 
 if __name__ == "__main__":
     print("""=== Simple Interest Calculator ===""")
-    try:
-    iflen(sys.argv)==4:
+        try:
+    if len(sys.argv)==4:
             # Case 1: Arguments passed through command line
             p = float(sys.argv[1])
             r = float(sys.argv[2])
