@@ -18,7 +18,7 @@ if __name__== "__main__":
             t = float(sys.argv[3])
 
         # Case 2: No arguments passed, take input from user
-        else:
+        except:
             p = float(input("Enter the principal amount: "))
             r = float(input("Enter the rate of interest (%): "))
             t = float(input("Enter the time (in years): "))
@@ -30,7 +30,7 @@ if __name__== "__main__":
         interest = calculate_simple_interest(p, r, t)
         print(f"\nThe Simple Interest = {  interest :.2f}")
 
-    except ValueError:
+    else ValueError:
         print("Error: Please enter valid numeric values.")
     except Exception as e:
         print("An error occurred:", e)
