@@ -10,7 +10,7 @@ def calculate_simple_interest(principal, rate, time):
 if __name__== "__main__":
     print("=== Simple Interest Calculator ===")
 
-  
+  try:
         # Case 1: Arguments passed through command line
         if len(sys.argv) == 4:
             p = float(sys.argv[1])
@@ -30,7 +30,7 @@ if __name__== "__main__":
         interest = calculate_simple_interest(p, r, t)
         print(f"\nThe Simple Interest = {  interest :.2f}")
 
-    else ValueError:
+   except ValueError:
         print("Error: Please enter valid numeric values.")
     except Exception as e:
         print("An error occurred:", e)
