@@ -10,7 +10,7 @@ def calculate_simple_interest(principal, rate, time):
 if __name__== "__main__":
     print("=== Simple Interest Calculator ===")
 
-    try:
+  
         # Case 1: Arguments passed through command line
         if len(sys.argv) == 4:
             p = float(sys.argv[1])
@@ -18,7 +18,7 @@ if __name__== "__main__":
             t = float(sys.argv[3])
 
         # Case 2: No arguments passed, take input from user
-        except:
+        else:
             p = float(input("Enter the principal amount: "))
             r = float(input("Enter the rate of interest (%): "))
             t = float(input("Enter the time (in years): "))
